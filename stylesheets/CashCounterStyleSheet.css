@@ -1,0 +1,130 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  /* font-family: 'Roboto Slab', serif; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Body styles */
+body {
+  background-color: rgb(18, 41, 62);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Table styles */
+#table {
+  display: grid;
+  grid-template-rows: repeat(15, 45px);
+  /* width: 600px; */
+  background-color: #f5f5f5;
+  margin: auto;
+  color: #333;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 200px 40px 200px 40px 200px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* .row:nth-last-child(1) {
+  background-color: rgb(191, 240, 225);
+  border-top: 3px solid rgb(156, 149, 149);
+} */
+.row:hover{
+  background-color: #ccc;
+}
+
+/* Table item styles */
+.bill_item {
+  grid-column-start: 1;
+  grid-row-start: auto;
+  /* border: 2px solid #ccc; */
+  justify-content: center;
+  padding-top: 1%;
+  padding-left: 5%;
+}
+
+.x_item {
+  grid-column-start: 2;
+  grid-row-start: auto;
+  text-align: center;
+  font-weight: 900;
+}
+
+.mult_item {
+  resize: none;
+  background-color: transparent;
+  font-size: 30px;
+  grid-column-start: 3;
+  grid-row-start: auto;
+  /* border: 2px solid #ccc; */
+  padding-top: 1%;
+  padding-left: 5%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.equals_item {
+  grid-column-start: 4;
+  grid-row-start: auto;
+  text-align: center;
+  /* padding-top: 6%; */
+  font-weight: 1200;
+  font-size: 40px;
+}
+
+.sum_item {
+  grid-column-start: 5;
+  grid-row-start: auto;
+  /* border: 2px solid #ccc; */
+  padding-top: 1%;
+  padding-left: 5%;
+}
+
+/* Button styles */
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 341px);
+  /* grid-template-rows: repeat(1,40px); */
+}
+
+#printBtn {
+  /* grid-column-start: 1; */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  height: 40px;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#printBtn:hover {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+#printBtn:active{
+  border: 2px solid #fff;
+}
+
+#resetBtn {
+  /* grid-column-start: 2; */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#resetBtn:active{
+  border: 2px solid #fff;
+}
+
+#resetBtn:hover {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}

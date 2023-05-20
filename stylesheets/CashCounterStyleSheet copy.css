@@ -1,0 +1,93 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Body styles */
+body {
+  background-color: rgb(18, 41, 62);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+/* Table styles */
+#table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(15, 6vh);
+  width: fit-content;
+  background-color:  #f5f5f5;
+  margin: auto;
+  color: #333;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 16vw 3vw 16vw 3vw 16vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.row:nth-last-child(1){
+  background-color: rgb(183, 243, 223);
+  border: 2px solid rgb(143, 189, 174);
+}
+
+/* Table item styles */
+.bill_item {
+  grid-column-start: 1;
+  grid-row-start: auto;
+  border: 2px solid #ccc;
+}
+
+.x_item {
+  grid-column-start: 2;
+  grid-row-start: auto;
+  text-align: center;
+  /* width: 0.5vw; */
+}
+
+.mult_item {
+  grid-column-start: 3;
+  grid-row-start: auto;
+  border: 2px solid #ccc;
+}
+
+.eaquals_item {
+  grid-column-start: 4;
+  grid-row-start: auto;
+  text-align: center;
+}
+
+.sum_item {
+  grid-column-start: 5;
+  grid-row-start: auto;
+  border: 2px solid #ccc;
+}
+
+
+/* Button styles */
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 27.02vw);
+  grid-template-rows: repeat(2,5vh);
+}
+
+#printBtn {
+  grid-column-start: 1;
+  border: 2px solid #ccc;
+}
+
+#resetBtn {
+  grid-column-start: 2;
+  border: 2px solid #ccc;
+}
+
